@@ -1,6 +1,14 @@
 
 local register = minecraftnt.register_block
 
+register('tall_grass', {
+	order = 66,
+	description = 'Tall Grass',
+	inventory_image = terrain2(0),
+	waving = 1,
+	sound = 'grass',
+})
+
 local seizure_texture = {{
 	name = "seizure_block.png",
 	animation = {
@@ -12,11 +20,10 @@ local seizure_texture = {{
 	backface_culling = true,
 }}
 register('seizureblock', {
-	order = 66,
+	order = 67,
 	description = 'Strobe Light',
 	light_source = minetest.LIGHT_MAX,
 	drawtype = "normal",
-	tiles = glowing_node_texture,
-	special_tiles = glowing_node_texture
+	tiles = seizure_texture,
+	special_tiles = seizure_texture
 })
-
