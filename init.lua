@@ -45,3 +45,15 @@ register('rainbow_wool', {
 	tiles = rainbow_texture,
 	special_tiles = rainbow_texture
 })
+
+-- CPE rejects
+register('mountain_grass', {
+	order = 69,
+	description = "Mountain Grass",
+	tiles = {
+		terrain(31),
+		terrain(3),
+		terrain(47),
+	},
+	sound = 'grass',
+})
