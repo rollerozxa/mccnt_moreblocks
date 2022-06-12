@@ -27,3 +27,21 @@ register('seizureblock', {
 	tiles = seizure_texture,
 	special_tiles = seizure_texture
 })
+
+local rainbow_texture = {{
+	name = "rainbow_block.png",
+	animation = {
+		type = "vertical_frames",
+		aspect_w = 16,
+		aspect_h = 16,
+		length = 2,
+	},
+	backface_culling = true,
+}}
+register('rainbow_wool', {
+	order = 68,
+	description = 'Rainbow Wool',
+	drawtype = "normal",
+	tiles = rainbow_texture,
+	special_tiles = rainbow_texture
+})
