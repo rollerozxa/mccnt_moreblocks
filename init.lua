@@ -57,3 +57,23 @@ register('mountain_grass', {
 	},
 	sound = 'grass',
 })
+register('cobweb', {
+	order = 70,
+	description = 'Cobweb',
+	inventory_image = terrain2(1),
+	sound = 'cloth',
+	liquid_viscosity = 14,
+	liquidtype = "source",
+	liquid_alternative_flowing = "minecraft:cobweb",
+	liquid_alternative_source = "minecraft:cobweb",
+	liquid_renewable = false,
+	liquid_range = 0,
+	walkable = false,
+})
+
+register('cyan_flower', {
+	order = 71,
+	description = 'Cyan Flower',
+	inventory_image = terrain2(2),
+	sound = 'grass',
+})
