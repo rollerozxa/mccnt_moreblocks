@@ -6,44 +6,39 @@ register('tall_grass', {
 	description = 'Tall Grass',
 	inventory_image = terrain2(0),
 	waving = 1,
+	buildable_to = true,
 	sound = 'grass',
 })
 
-local seizure_texture = {{
-	name = "seizure_block.png",
-	animation = {
-		type = "vertical_frames",
-		aspect_w = 1,
-		aspect_h = 8,
-		length = 2,
-	},
-	backface_culling = true,
-}}
 register('seizureblock', {
 	order = 67,
 	description = 'Strobe Light',
-	light_source = minetest.LIGHT_MAX,
+	light_source = minetest.LIGHT_MAX-1,
 	drawtype = "normal",
-	tiles = seizure_texture,
-	special_tiles = seizure_texture
+	tiles = {{
+		name = "seizure_block.png",
+		animation = {
+			type = "vertical_frames",
+			aspect_w = 1,
+			aspect_h = 8,
+			length = 2,
+		}
+	}}
 })
 
-local rainbow_texture = {{
-	name = "rainbow_block.png",
-	animation = {
-		type = "vertical_frames",
-		aspect_w = 16,
-		aspect_h = 16,
-		length = 2,
-	},
-	backface_culling = true,
-}}
 register('rainbow_wool', {
 	order = 68,
 	description = 'Rainbow Wool',
 	drawtype = "normal",
-	tiles = rainbow_texture,
-	special_tiles = rainbow_texture
+	tiles = {{
+		name = "rainbow_block.png",
+		animation = {
+			type = "vertical_frames",
+			aspect_w = 16,
+			aspect_h = 16,
+			length = 2,
+		}
+	}}
 })
 
 -- CPE rejects
