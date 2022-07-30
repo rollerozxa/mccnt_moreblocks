@@ -179,3 +179,55 @@ register('table', {
 	},
 	sound = 'wood',
 })
+
+register('granite', {
+	description = "Granite",
+	tiles = { terrain2(6) },
+	sound = 'stone',
+})
+register('polished_granite', {
+	description = "Polished Granite",
+	tiles = { terrain2(22) },
+	sound = 'stone',
+})
+
+register('diorite', {
+	description = "Diorite",
+	tiles = { terrain2(7) },
+	sound = 'stone',
+})
+register('polished_diorite', {
+	description = "Polished Diorite",
+	tiles = { terrain2(23) },
+	sound = 'stone',
+})
+
+register('andesite', {
+	description = "Andesite",
+	tiles = { terrain2(8) },
+	sound = 'stone',
+})
+
+register('stone_brick_cracked', {
+	description = "Cracked Stone Brick",
+	tiles = { terrain2(24) },
+	sound = 'stone',
+})
+
+register('stone_brick_mossy', {
+	description = "Mossy Stone Brick",
+	tiles = { terrain2(37) },
+	sound = 'stone',
+})
+
+register('stone_brick_chiseled', {
+	description = "Chiseled Stone Brick",
+	tiles = { terrain2(38) },
+	sound = 'stone',
+})
+
+register("very_black_wool", {
+	description = "Very Black Wool",
+	tiles = { terrain2(64) },
+	sound = 'cloth',
+})
