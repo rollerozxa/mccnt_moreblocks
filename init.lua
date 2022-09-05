@@ -207,10 +207,15 @@ register('andesite', {
 	tiles = { terrain2(8) },
 	sound = 'stone',
 })
+register('polished_andesite', {
+	description = "Polished Andesite",
+	tiles = { terrain2(24) },
+	sound = 'stone',
+})
 
 register('stone_brick_cracked', {
 	description = "Cracked Stone Brick",
-	tiles = { terrain2(24) },
+	tiles = { terrain2(21) },
 	sound = 'stone',
 })
 
